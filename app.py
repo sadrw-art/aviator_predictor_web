@@ -64,4 +64,10 @@ from flask import Flask app = Flask(__name__)
 @app.route('/') def home():
     return "🚀 Aviator Predictor is working!" if __name__ 
 == '__main__':
-    app.run()
+    app.run() from flask import Flask, render_template 
+import random app = Flask(__name__) @app.route("/") def 
+home():
+    prediction = round(random.uniform(1.0, 20.0), 2) return 
+    f"<h1>🚀 Your Aviator Prediction: {prediction}x</h1>"
+if __name__ == "__main__":
+    app.run(debug=True)
