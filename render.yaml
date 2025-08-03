@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: aviator_predictor
+    env: python
+    buildCommand: ""
+    startCommand: gunicorn app:app
+    plan: free
+    branch: main
+    runtime: python
+    repo: https://github.com/sadrw-art/aviator_predictor_web
