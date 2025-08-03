@@ -1,0 +1,45 @@
+body {
+  background: #121212;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 30px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  background: crimson;
+  color: white;
+  border: none;
+  font-size: 20px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: darkred;
+}
+
+.big-glow {
+  font-size: 60px;
+  margin-top: 30px;
+  color: #00ff99;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 0.9; }
+  50% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.9; }
+}
+.plane-container { height: 100px; position: 
+  relative; overflow: hidden; margin-bottom: 30px;
+}
+#plane {
+  position: absolute; top: 0; left: -200px; width: 
+  100px; animation: fly 10s linear infinite;
+}
+@keyframes fly { 0% { left: -200px; } 100% { left: 
+  100%; }
+}

@@ -1,0 +1,18 @@
+<!DOCTYPE html> <html> <head> <title>Aviator 
+  Predictor</title> <link rel="stylesheet" 
+  href="/static/style.css"> <script 
+  src="/static/script.js" defer></script>
+</head> <body> <h2>Welcome, {{ session['user'] 
+  }}!</h2>
+  <div id="platform-select"> <button 
+    onclick="choosePlatform('Betpawa')">Betpawa</button> 
+    <button 
+    onclick="choosePlatform('Winner')">Winner</button>
+  </div> <div id="platform-message"></div> <!-- ✈️ 
+  Moving Plane --> <div class="plane-container">
+    <img src="/static/plane.png" id="plane" 
+    alt="Plane">
+  </div> <div id="prediction" 
+  class="big-glow">--</div>
+</body>
+</html>
